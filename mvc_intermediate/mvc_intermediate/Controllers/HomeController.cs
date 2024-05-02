@@ -28,6 +28,16 @@ namespace mvc_intermediate.Controllers
                 new Urun(){ UrunId = 9, UrunAdi = "Iphone 11 Plus", Aciklama = "İyi", Fiyat = 8000, Satistami = false }
             };
 
+            List<Kategori> kategoriler = new List<Kategori>()
+            {
+                new Kategori(){ Id = 1, KategoriAdi = "Telefon"},
+                new Kategori(){ Id = 2, KategoriAdi = "Tablet"},
+                new Kategori(){ Id = 3, KategoriAdi = "Laptop"},
+            };
+
+            ViewBag.UrunSayisi = urunler.Count();
+            ViewBag.Kategoriler = kategoriler;
+
             return View(urunler);
         }
     }
