@@ -7,6 +7,11 @@
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <style>
+        body {
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -27,7 +32,28 @@
     </div>
 
     <div class="container body-content">
-        @RenderBody()
+
+        @if (IsSectionDefined("Kategori"))
+        {
+            <div class="row">
+                <div class="col-md-3">
+                    @RenderSection("Kategori", false)
+                </div>
+
+                <div class="col-md-9">
+                    @RenderBody()
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="row">
+                <div class="col-md-12">
+                    @RenderBody()
+                </div>
+            </div>
+        }
+
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>

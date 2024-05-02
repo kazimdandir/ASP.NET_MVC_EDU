@@ -38,5 +38,15 @@ namespace mvc_intermediate.Controllers
 
             return View(model);
         }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
+        public ActionResult About()
+        {
+            return View();
+        }
     }
 }

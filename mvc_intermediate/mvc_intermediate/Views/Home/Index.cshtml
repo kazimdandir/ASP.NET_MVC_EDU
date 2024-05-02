@@ -12,20 +12,12 @@
     <strong>@Model.UrunSayisi</strong> adet ürün listelendi.
 </div>
 
-<hr />
 
-<div class="row">
-
-    <div class="col-md-3">
-        @Html.Action("KategoriMenu", "Kategori")
-    </div>
-
-    <div class="col-md-9">
-        @foreach (var urun in Model.Urunler)
-        {
-            if (urun.Satistami == true)
-            {
-                <div class="col-sm-6 col-md-4">
+@foreach (var urun in Model.Urunler)
+{
+    if (urun.Satistami == true)
+    {
+        <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
                         <img src="https://placehold.co/350x150" alt="..." />
                         <div class="caption">
@@ -44,7 +36,5 @@
                         </div>
                     </div>
                 </div>
-            }
-        }
-    </div>
-</div>
+    }
+}
