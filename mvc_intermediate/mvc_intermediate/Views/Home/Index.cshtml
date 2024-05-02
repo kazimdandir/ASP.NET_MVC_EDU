@@ -1,6 +1,6 @@
-﻿@using mvc_intermediate.Models
+﻿@using mvc_intermediate.Models;
 
-@model List<Urun>
+@model UrunKategoriModel
 @{
     ViewBag.Title = "Index";
 }
@@ -9,7 +9,7 @@
 <hr />
 
 <div class="alert alert-success" role="alert">
-    <strong>@ViewBag.UrunSayisi</strong> adet ürün listelendi.
+    <strong>@Model.UrunSayisi</strong> adet ürün listelendi.
 </div>
 
 <hr />
@@ -18,15 +18,17 @@
 
     <div class="col-md-3">
         <div class="list-group">
-            @foreach (var kategori in (List<Kategori>)ViewBag.Kategoriler)
+            @foreach (var kategori in Model.Kategoriler)
             {
-                <a href="#" class="list-group-item">@kategori.KategoriAdi</a>
+                <a href="#" class="list-group-item">
+                    @kategori.KategoriAdi
+                </a>
             }
         </div>
     </div>
 
     <div class="col-md-9">
-        @foreach (var urun in Model)
+        @foreach (var urun in Model.Urunler)
         {
             if (urun.Satistami == true)
             {

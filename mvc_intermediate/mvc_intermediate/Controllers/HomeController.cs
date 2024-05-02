@@ -35,10 +35,16 @@ namespace mvc_intermediate.Controllers
                 new Kategori(){ Id = 3, KategoriAdi = "Laptop"},
             };
 
-            ViewBag.UrunSayisi = urunler.Count();
-            ViewBag.Kategoriler = kategoriler;
+            UrunKategoriModel model = new UrunKategoriModel();
 
-            return View(urunler);
+            model.UrunSayisi = urunler.Count();
+            model.Urunler = urunler;
+            model.Kategoriler = kategoriler;
+
+            //ViewBag.UrunSayisi = urunler.Count();
+            //ViewBag.Kategoriler = kategoriler;
+
+            return View(model);
         }
     }
 }
