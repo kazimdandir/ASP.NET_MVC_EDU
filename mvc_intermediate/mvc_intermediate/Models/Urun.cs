@@ -10,6 +10,7 @@ namespace mvc_intermediate.Models
         public int UrunId { get; set; }
         public string UrunAdi { get; set; }
         public string Aciklama { get; set; }
+        public string Resim { get; set; }
         public double Fiyat { get; set; }
         public bool Satistami { get; set; }
     }
