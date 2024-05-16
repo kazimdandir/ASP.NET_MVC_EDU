@@ -42,7 +42,6 @@ D:\Projects\ASP.NET_Framework_Egitim\mvc_intermediate\mvc_intermediate\bin\Syste
 D:\Projects\ASP.NET_Framework_Egitim\mvc_intermediate\mvc_intermediate\bin\System.Web.Helpers.xml
 D:\Projects\ASP.NET_Framework_Egitim\mvc_intermediate\mvc_intermediate\bin\System.Web.Mvc.xml
 D:\Projects\ASP.NET_Framework_Egitim\mvc_intermediate\mvc_intermediate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Projects\ASP.NET_Framework_Egitim\mvc_intermediate\mvc_intermediate\obj\Debug\mvc_intermediate.csproj.AssemblyReference.cache
 D:\Projects\ASP.NET_Framework_Egitim\mvc_intermediate\mvc_intermediate\obj\Debug\mvc_intermediate.csproj.CoreCompileInputs.cache
 D:\Projects\ASP.NET_Framework_Egitim\mvc_intermediate\mvc_intermediate\obj\Debug\mvc_intermediate.csproj.CopyComplete
 D:\Projects\ASP.NET_Framework_Egitim\mvc_intermediate\mvc_intermediate\obj\Debug\mvc_intermediate.dll

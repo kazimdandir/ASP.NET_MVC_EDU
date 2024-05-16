@@ -14,13 +14,17 @@ namespace mvc_intermediate.Controllers
         {
             UrunKategoriModel model = new UrunKategoriModel();
 
-            model.UrunSayisi = VeriTabani.Liste.Count();
-            model.Urunler = VeriTabani.Liste;
-
-            //ViewBag.UrunSayisi = urunler.Count();
-            //ViewBag.Kategoriler = kategoriler;
+            model.UrunSayisi = VeriTabani.Liste.Where(i => i.Satistami == true).Count();
+            model.Urunler = VeriTabani.Liste.Where(i => i.Satistami == true).ToList();
 
             return View(model);
+        }
+
+        public ActionResult Details(int id)
+        {
+            var urun = VeriTabani.Liste.Where(i => i.UrunId == id).FirstOrDefault();
+            
+            return View(urun);
         }
 
         public ActionResult Contact()
