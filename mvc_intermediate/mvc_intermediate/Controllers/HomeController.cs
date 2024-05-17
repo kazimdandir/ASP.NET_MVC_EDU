@@ -27,6 +27,12 @@ namespace mvc_intermediate.Controllers
             return View(urun);
         }
 
+        public ActionResult UrunEkle()
+        {
+            //bilgileri karşılayıp gerekli yere kayıt edelim
+            return View();
+        }
+
         public ActionResult Contact()
         {
             return View();
