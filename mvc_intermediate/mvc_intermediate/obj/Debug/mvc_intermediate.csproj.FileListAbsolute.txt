@@ -46,3 +46,4 @@ D:\Projects\ASP.NET_Framework_Egitim\mvc_intermediate\mvc_intermediate\obj\Debug
 D:\Projects\ASP.NET_Framework_Egitim\mvc_intermediate\mvc_intermediate\obj\Debug\mvc_intermediate.csproj.CopyComplete
 D:\Projects\ASP.NET_Framework_Egitim\mvc_intermediate\mvc_intermediate\obj\Debug\mvc_intermediate.dll
 D:\Projects\ASP.NET_Framework_Egitim\mvc_intermediate\mvc_intermediate\obj\Debug\mvc_intermediate.pdb
+D:\Projects\ASP.NET_Framework_Egitim\mvc_intermediate\mvc_intermediate\obj\Debug\mvc_intermediate.csproj.AssemblyReference.cache

@@ -1,0 +1,41 @@
+﻿@Model List<mvc_intermediate.Models.Urun>
+    @{
+        ViewBag.Title = "UrunListe";
+    }
+
+    <h2>UrunListe</h2>
+    <hr />
+
+    <style>
+        .img {
+            width: 300px;
+            height: 400px;
+        }
+    </style>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Resim</th>
+                <th>Ürün Adı</th>
+                <th>Fiyat</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="~/img/@item.Resim" class="img"     />
+                    </td>
+                    <td>@item.UrunAdi</td>
+                    <td>@item.Fiyat</td>
+                    <td>
+                        <a href="/Home/Details/@item.UrunId" class="btn btn-primary btn-xs">Detay</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>

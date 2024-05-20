@@ -27,10 +27,18 @@ namespace mvc_intermediate.Controllers
             return View(urun);
         }
 
+        [HttpGet] //Formu getirir
         public ActionResult UrunEkle()
         {
-            //bilgileri karşılayıp gerekli yere kayıt edelim
             return View();
+        }
+
+        [HttpPost] //Bilgileri karşılar
+        public ActionResult UrunEkle(Urun entity)
+        {      
+            VeriTabani.ElemanEkle(entity);
+
+            return View("UrunListe", VeriTabani.Liste);
         }
 
         public ActionResult Contact()
