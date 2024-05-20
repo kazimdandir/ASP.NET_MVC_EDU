@@ -8,6 +8,8 @@ namespace EntityFrameworkSamples
 {
     public class Kategori
     {
+        // Kategori tablosunun birincil anahtarı olarak işaretlenir
+        // varsayılan olarak otomatik sayı olarak ayarlanır
         public int Id { get; set; }
         public string KategoriAdi { get; set; }
     }

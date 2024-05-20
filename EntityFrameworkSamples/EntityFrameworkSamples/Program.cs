@@ -13,17 +13,14 @@ namespace EntityFrameworkSamples
         static void Main(string[] args)
         {
             Kategori k = new Kategori();
-            k.Id = 4;
-            k.KategoriAdi = "beyaz eşya";
+            k.KategoriAdi = "telefon";
 
-            List<Kategori> kategoriler = new List<Kategori>()
-            {
-                new Kategori(){Id=1, KategoriAdi="telefon"},
-                new Kategori(){Id=1, KategoriAdi="bilgisayar"},
-                new Kategori(){Id=1, KategoriAdi="tablet"}
-            };
+            UrunContext db = new UrunContext();
+            db.Kategoriler.Add(k);
+            db.SaveChanges();
 
-            kategoriler.Add(k);
+            Console.WriteLine("veri kayıt edildi");
+            Console.ReadLine();
         }
     }
 }
