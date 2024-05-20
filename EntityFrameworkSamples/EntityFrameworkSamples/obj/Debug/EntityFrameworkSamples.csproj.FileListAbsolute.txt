@@ -1,0 +1,12 @@
+D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\bin\Debug\EntityFrameworkSamples.exe.config
+D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\bin\Debug\EntityFrameworkSamples.exe
+D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\bin\Debug\EntityFrameworkSamples.pdb
+D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\bin\Debug\EntityFramework.dll
+D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\bin\Debug\EntityFramework.xml
+D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.csproj.AssemblyReference.cache
+D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.csproj.CoreCompileInputs.cache
+D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.csproj.CopyComplete
+D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.exe
+D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.pdb
