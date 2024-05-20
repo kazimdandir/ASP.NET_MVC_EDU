@@ -13,7 +13,7 @@ namespace EntityFrameworkSamples
         static void Main(string[] args)
         {
             #region Inserting Data
-            //// LINQ (Language integrated query)
+            // LINQ (Language integrated query)
             //UrunContext context = new UrunContext();
 
             //List<Urun> urunler = new List<Urun>()
@@ -37,44 +37,88 @@ namespace EntityFrameworkSamples
 
             #region Updating Data
 
-            UrunContext context = new UrunContext();
+            //UrunContext context = new UrunContext();
 
-            //var urun = context.Urunler.Find(1);
+            ////var urun = context.Urunler.Find(1);
 
-            //Console.WriteLine("Urun Id : {0} Urun Adı : {1} Fiyat : {2}", urun.Id, urun.UrunAdi, urun.Fiyat);
+            ////Console.WriteLine("Urun Id : {0} Urun Adı : {1} Fiyat : {2}", urun.Id, urun.UrunAdi, urun.Fiyat);
 
-            //urun.Fiyat = urun.Fiyat + (urun.Fiyat * 0.5);
-            //urun.UrunAdi = "Samsung S6";
-            //urun.StokAdeti += 100;
+            ////urun.Fiyat = urun.Fiyat + (urun.Fiyat * 0.5);
+            ////urun.UrunAdi = "Samsung S6";
+            ////urun.StokAdeti += 100;
+
+            ////context.SaveChanges();
+
+            ////urun = context.Urunler.Find(1);
+
+            ////Console.WriteLine("Urun Id : {0} Urun Adı : {1} Fiyat : {2}", urun.Id, urun.UrunAdi, urun.Fiyat);
+
+            //var urunler = context.Urunler.ToList();
+
+            //foreach (var urun in urunler)
+            //{
+            //    Console.WriteLine("Fiyat : {0}", urun.Fiyat);
+            //}
+
+            //Console.WriteLine("--------------");
+
+            //foreach (var urun in urunler)
+            //{
+            //    urun.Fiyat *= 1.5;
+            //}
 
             //context.SaveChanges();
 
-            //urun = context.Urunler.Find(1);
+            //urunler = context.Urunler.ToList();
 
-            //Console.WriteLine("Urun Id : {0} Urun Adı : {1} Fiyat : {2}", urun.Id, urun.UrunAdi, urun.Fiyat);
+            //foreach (var urun in urunler)
+            //{
+            //    Console.WriteLine("Fiyat : {0}", urun.Fiyat);
+            //}
 
-            var urunler = context.Urunler.ToList();
+            #endregion
 
-            foreach (var urun in urunler)
-            {
-                Console.WriteLine("Fiyat : {0}", urun.Fiyat);
-            }
+            #region Deleting Data
 
-            Console.WriteLine("--------------");
+            //UrunContext db = new UrunContext();
 
-            foreach (var urun in urunler)
-            {
-                urun.Fiyat *= 1.5;
-            }
+            ////var urun = db.Urunler.Find(2);
 
-            context.SaveChanges();
+            ////if (urun != null)
+            ////{
+            ////    db.Urunler.Remove(urun);
+            ////}
 
-            urunler = context.Urunler.ToList();
+            ////db.SaveChanges();
 
-            foreach (var urun in urunler)
-            {
-                Console.WriteLine("Fiyat : {0}", urun.Fiyat);
-            }
+            //////var urunler = db.Urunler.ToList();
+            ////foreach (var item in db.Urunler)
+            ////{
+            ////    Console.WriteLine("Urun Id : {0} Urun Adı : {1}", item.Id, item.UrunAdi);
+            ////}
+
+
+            //// Aşağıdaki kod tüm ürünleri siler, yukarıdaki belirttiğin ürünü siler
+            //var urunler = db.Urunler.ToList();
+
+            //foreach (var urun in urunler)
+            //{
+            //    db.Urunler.Remove(urun);
+            //}
+
+            //db.SaveChanges();
+
+            //if (db.Urunler.Count() == 0)
+            //{
+            //    Console.WriteLine("Veritabanında ürün bulunamadı");
+            //}
+            //else
+            //{
+            //    foreach (var item in db.Urunler)
+            //    {
+            //        Console.WriteLine("Urun Id : {0} Urun Adı : {1}", item.Id, item.UrunAdi);
+            //    }
+            //}
 
             #endregion
 
