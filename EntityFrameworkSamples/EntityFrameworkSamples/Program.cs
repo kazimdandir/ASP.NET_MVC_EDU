@@ -146,6 +146,36 @@ namespace EntityFrameworkSamples
 
             // Buraya kadar yaptığımız örneklerde Urun ve Kategori sınıflarımız vardı ama hiç bir ürün ile kategoriyi ilişkilendirmedik şimdi entity sınıflarını ilişkilendireceğiz.
 
+            //Arka tarafta Urun ve Kategori sınıflarında gerekli yapıları oluşturduk ve Tedarikci sınıfını da oluşturup çoka çok bir ilişki kurduk.
+
+            #endregion
+
+            #region Linq To Objects
+
+            string[] isimler = { "ahmet", "mehmet", "hasan", "ayşe" };
+            //var isimler2 = isimler.Select(i => i.Length > 4); //true, falsa döner
+
+            var isimler2 = isimler.Where(i => i.Length > 4); //değeri seçmek için where kullanmalıyız
+
+            foreach (var item in isimler2)
+            {
+                Console.WriteLine(item);
+            }
+
+            //int[] sayilar = { 1, 5, 6, 4, 9, 8, 3 };
+
+            ////var sayilar2 = sayilar.Select(i => i + 1); //linq ile her sayıya bir ekledik ve foreach ile aşağıdaki yazdırdık
+
+            ////var sayilar2 = sayilar.Select(i => i % 2 == 1); //true-false döner
+
+            //var sayilar2 = sayilar.Where(i => i % 2 == 1).OrderByDescending(i => i); //değer döndürür ve sıralar
+
+
+            //foreach (var item in sayilar2)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
             #endregion
 
             Console.ReadLine();
