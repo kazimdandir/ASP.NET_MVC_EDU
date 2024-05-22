@@ -17,6 +17,7 @@ namespace EntityFrameworkSamples
 
         public int KategoriId { get; set; } //foreign key, otomatik bağlantı kuracak, KategoriId = Kategori + Id
 
+        //navigation property
         public Kategori Kategori { get; set; } //burası program anında kullanılacak 
 
         public List<Tedarikci> Tedarikciler { get; set; } //burası program anında kullanılacak 

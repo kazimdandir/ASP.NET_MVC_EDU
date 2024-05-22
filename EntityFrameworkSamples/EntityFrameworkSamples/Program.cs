@@ -152,15 +152,15 @@ namespace EntityFrameworkSamples
 
             #region Linq To Objects
 
-            string[] isimler = { "ahmet", "mehmet", "hasan", "ayşe" };
-            //var isimler2 = isimler.Select(i => i.Length > 4); //true, falsa döner
+            //string[] isimler = { "ahmet", "mehmet", "hasan", "ayşe" };
+            ////var isimler2 = isimler.Select(i => i.Length > 4); //true, falsa döner
 
-            var isimler2 = isimler.Where(i => i.Length > 4); //değeri seçmek için where kullanmalıyız
+            //var isimler2 = isimler.Where(i => i.Length > 4); //değeri seçmek için where kullanmalıyız
 
-            foreach (var item in isimler2)
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in isimler2)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             //int[] sayilar = { 1, 5, 6, 4, 9, 8, 3 };
 
@@ -175,6 +175,84 @@ namespace EntityFrameworkSamples
             //{
             //    Console.WriteLine(item);
             //}
+
+            #endregion
+
+            #region Selecting
+
+            UrunContext db = new UrunContext();
+
+            #region #1
+
+            // model için bir obje üretelim
+            // view'in modeli --> @model List<KategoriUrunModel>()
+
+            var kategoriler = db.Kategoriler
+                .Select(a => new KategoriUrunModel()
+                {
+                    KategoriAdi = a.KategoriAdi,
+                    Urunler = a.Urunler.Select(b => new UrunModel()
+                    {
+                        UrunAdi = b.UrunAdi,
+                        Fiyat = b.Fiyat
+                    }).ToList()
+                })
+                .ToList();
+
+            foreach (var kategori in kategoriler)
+            {
+                Console.WriteLine("kategori : {0}", kategori.KategoriAdi);
+                Console.WriteLine("-------------------------------------");
+                foreach (var urun in kategori.Urunler)
+                {
+                    Console.WriteLine("urun adı = {0} fiyat : {1}", urun.UrunAdi, urun.Fiyat);
+                }
+            }
+
+            #endregion
+
+            #region #2
+
+            //var urunler = db.Urunler.
+            //    Select(i => new UrunModel()
+            //    {
+            //        //anonymous object
+            //        UrunAdi = i.UrunAdi.Length > 12 ? i.UrunAdi.Substring(0, 9) + "..." : i.UrunAdi,
+            //        Fiyat = i.Fiyat, // burada TERNERT EXPRESSION  kullandık (koşul ? kod_1 : kod_2;)
+            //        Kategori = i.Kategori.KategoriAdi
+            //    })
+            //    .ToList();
+
+            //// @model List<UrunModel>
+            //foreach (var urun in urunler)
+            //{
+            //    Console.WriteLine("urun adı : {0} fiyat : {1} kategori : {2}", urun.UrunAdi, urun.Fiyat, urun.Kategori);
+            //}
+
+            #endregion
+
+            #region #3
+
+            //var urunler = db.Urunler.
+            //    Select(i => new
+            //    {
+            //        //anonymous object
+            //        ProductName = i.UrunAdi.Length > 12 ? i.UrunAdi.Substring(0, 9) + "..." : i.UrunAdi,
+            //        Price = i.Fiyat // burada TERNERT EXPRESSION  kullandık (koşul ? kod_1 : kod_2;)
+            //    })
+            //    .ToList();
+
+            //foreach (var urun in urunler)
+            //{
+            //    Console.WriteLine("urun adı : {0} fiyat : {1}", urun.ProductName, urun.Price);
+            //}
+
+            //foreach (var urun in urunler)
+            //{
+            //    Console.WriteLine("urun id : {4} urun adı : {0} fiyat : {1} stok : {2} kategori id : {3}", urun.UrunAdi, urun.Fiyat, urun.StokAdeti, urun.KategoriId, urun.Id);
+            //}
+
+            #endregion
 
             #endregion
 
