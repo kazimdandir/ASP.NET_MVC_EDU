@@ -11,7 +11,7 @@ namespace EntityFrameworkSamples
     {
         public UrunContext() :base("urunConnection")
         {
-
+            Database.SetInitializer(new DataInitializer()); //initializerden uygulamayı haberdar ediyoruz
         }
         public DbSet<Kategori> Kategoriler { get; set; }
         public DbSet<Urun> Urunler { get; set; }

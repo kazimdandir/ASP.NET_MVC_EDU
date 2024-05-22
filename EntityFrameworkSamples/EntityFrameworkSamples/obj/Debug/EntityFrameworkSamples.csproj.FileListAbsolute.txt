@@ -5,7 +5,6 @@ D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSampl
 D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\bin\Debug\EntityFramework.xml
 D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\bin\Debug\EntityFramework.SqlServer.xml
-D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.csproj.AssemblyReference.cache
 D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.csproj.CoreCompileInputs.cache
 D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.csproj.CopyComplete
 D:\Projects\ASP.NET_Framework_Egitim\EntityFrameworkSamples\EntityFrameworkSamples\obj\Debug\EntityFrameworkSamples.exe

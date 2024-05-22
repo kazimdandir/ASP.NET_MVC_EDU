@@ -122,6 +122,26 @@ namespace EntityFrameworkSamples
 
             #endregion
 
+            #region Seeding Data
+
+            // entity framework initializer : test verilerini her seferinde veritabanına getiriyor
+
+            // https://www.entityframeworktutorial.net/code-first/database-initialization-strategy-in-code-first.aspx
+
+            // DataInitializer sınıfında DropCreateDatabaseIfModelChanges<UrunContext>'ı kalıtım alarak db'deki entity sınıflarında bir değişiklik olursa db'yi silmesini ve yeniden oluşturmasını sağladık
+
+            UrunContext db = new UrunContext();
+            var urunler = db.Urunler.ToList();
+
+            foreach (var item in urunler)
+            {
+                Console.WriteLine("urun adı : {0}, ikinci el mi ? : {1}", item.UrunAdi, item.IkinciElMi);
+            }
+
+            Console.WriteLine("veritabanı oluştu");
+
+            #endregion
+
             Console.ReadLine();
         }
     }

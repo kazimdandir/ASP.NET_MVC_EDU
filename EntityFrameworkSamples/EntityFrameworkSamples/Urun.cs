@@ -10,9 +10,9 @@ namespace EntityFrameworkSamples
     {
         public int Id { get; set; }
         public string UrunAdi { get; set; }
+        public bool IkinciElMi { get; set; }
         public double Fiyat { get; set; }
         public int StokAdeti { get; set; }
-
         public bool Satistami { get; set; }
     }
 }
