@@ -14,5 +14,11 @@ namespace EntityFrameworkSamples
         public double Fiyat { get; set; }
         public int StokAdeti { get; set; }
         public bool Satistami { get; set; }
+
+        public int KategoriId { get; set; } //foreign key, otomatik bağlantı kuracak, KategoriId = Kategori + Id
+
+        public Kategori Kategori { get; set; } //burası program anında kullanılacak 
+
+        public List<Tedarikci> Tedarikciler { get; set; } //burası program anında kullanılacak 
     }
 }
