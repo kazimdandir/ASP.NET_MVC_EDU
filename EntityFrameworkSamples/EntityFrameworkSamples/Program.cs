@@ -180,34 +180,34 @@ namespace EntityFrameworkSamples
 
             #region Selecting
 
-            UrunContext db = new UrunContext();
+            //UrunContext db = new UrunContext();
 
             #region #1
 
-            // model için bir obje üretelim
-            // view'in modeli --> @model List<KategoriUrunModel>()
+            //// model için bir obje üretelim
+            //// view'in modeli --> @model List<KategoriUrunModel>()
 
-            var kategoriler = db.Kategoriler
-                .Select(a => new KategoriUrunModel()
-                {
-                    KategoriAdi = a.KategoriAdi,
-                    Urunler = a.Urunler.Select(b => new UrunModel()
-                    {
-                        UrunAdi = b.UrunAdi,
-                        Fiyat = b.Fiyat
-                    }).ToList()
-                })
-                .ToList();
+            //var kategoriler = db.Kategoriler
+            //    .Select(a => new KategoriUrunModel()
+            //    {
+            //        KategoriAdi = a.KategoriAdi,
+            //        Urunler = a.Urunler.Select(b => new UrunModel()
+            //        {
+            //            UrunAdi = b.UrunAdi,
+            //            Fiyat = b.Fiyat
+            //        }).ToList()
+            //    })
+            //    .ToList();
 
-            foreach (var kategori in kategoriler)
-            {
-                Console.WriteLine("kategori : {0}", kategori.KategoriAdi);
-                Console.WriteLine("-------------------------------------");
-                foreach (var urun in kategori.Urunler)
-                {
-                    Console.WriteLine("urun adı = {0} fiyat : {1}", urun.UrunAdi, urun.Fiyat);
-                }
-            }
+            //foreach (var kategori in kategoriler)
+            //{
+            //    Console.WriteLine("kategori : {0}", kategori.KategoriAdi);
+            //    Console.WriteLine("-------------------------------------");
+            //    foreach (var urun in kategori.Urunler)
+            //    {
+            //        Console.WriteLine("urun adı = {0} fiyat : {1}", urun.UrunAdi, urun.Fiyat);
+            //    }
+            //}
 
             #endregion
 
@@ -250,6 +250,129 @@ namespace EntityFrameworkSamples
             //foreach (var urun in urunler)
             //{
             //    Console.WriteLine("urun id : {4} urun adı : {0} fiyat : {1} stok : {2} kategori id : {3}", urun.UrunAdi, urun.Fiyat, urun.StokAdeti, urun.KategoriId, urun.Id);
+            //}
+
+            #endregion
+
+            #endregion
+
+            #region Inserting
+
+            UrunContext db = new UrunContext();
+
+            #region #1
+
+            //var kategoriler = db.Kategoriler
+            //    .Where(i => i.KategoriAdi == "Temizlik")
+            //    .Select(i =>
+            //    new
+            //    {
+            //        i.KategoriAdi,
+            //        i.Urunler
+            //    }).
+            //    ToList();
+
+            //foreach (var kategori in kategoriler)
+            //{
+            //    Console.WriteLine(kategori.KategoriAdi);
+
+            //    foreach (var urun in kategori.Urunler)
+            //    {
+            //        Console.WriteLine(urun.UrunAdi);
+            //    }
+            //}
+
+            #endregion
+
+            #region #2
+
+            //Urun urun = new Urun();
+            //urun.UrunAdi = "Omo Çamaşır Deterjanı";
+            //urun.StokAdeti = 200;
+            //urun.Fiyat = 30;
+
+            //urun.Kategori = db.Kategoriler.Where(i=>i.KategoriAdi=="Temizlik").FirstOrDefault();
+
+            //db.Urunler.Add(urun);
+            //db.SaveChanges();
+
+            //foreach (var item in db.Kategoriler.Where(i => i.KategoriAdi == "Temizlik"))
+            //{
+            //    foreach (var entity in item.Urunler)
+            //    {
+            //        Console.WriteLine(entity.UrunAdi);
+            //    }
+            //}
+
+            #endregion
+
+            #region #3
+
+            //Urun urun = new Urun();
+            //urun.UrunAdi = "Ace Çamaşır Suyu";
+            //urun.StokAdeti = 200;
+            //urun.Fiyat = 10;
+
+            //urun.Kategori = new Kategori() { KategoriAdi = "Temizlik" };
+
+            //db.Urunler.Add(urun);
+            //db.SaveChanges();
+
+            //foreach (var item in db.Kategoriler.Where(i=>i.KategoriAdi=="Temizlik"))
+            //{
+            //    foreach (var entity in item.Urunler)
+            //    {
+            //        Console.WriteLine(entity.UrunAdi);
+            //    }
+            //}
+
+            #endregion
+
+            #region #4
+
+            //Kategori kategori = new Kategori();
+            //kategori.KategoriAdi = "Kişisel Bakım";
+
+            //Urun urun = new Urun();
+            //urun.UrunAdi = "Signal Diş Macunu";
+            //urun.Fiyat = 15;
+            //urun.StokAdeti = 100;
+
+            //kategori.Urunler.Add(urun);
+            //db.Kategoriler.Add(kategori);
+
+            //db.SaveChanges();
+
+            //foreach (var item in db.Urunler.Where(i => i.Kategori.KategoriAdi == "Kişisel Bakım"))
+            //{
+            //    Console.WriteLine(item.UrunAdi);
+            //}
+
+            #endregion
+
+            #region #5
+
+            //Urun entity = new Urun();
+            //entity.UrunAdi = "iPhone 7 Plus";
+            //entity.Fiyat = 4000;
+            //entity.StokAdeti = 100;
+            //entity.KategoriId = 1;
+            //db.Urunler.Add(entity);
+            //db.SaveChanges();
+
+            //foreach (var item in db.Urunler.Where(i => i.KategoriId == 1))
+            //{
+            //    Console.WriteLine("urun adı : {0}", item.UrunAdi);
+            //}
+
+            //Kategori entity = new Kategori();
+            //entity.KategoriAdi = "Kitap";
+            //db.Kategoriler.Add(entity);
+            //db.SaveChanges();
+
+            //foreach (var kategori in db.Kategoriler)
+            //{
+            //    Console.WriteLine(kategori.KategoriAdi);
             //}
 
             #endregion

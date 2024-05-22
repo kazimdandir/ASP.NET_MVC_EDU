@@ -9,6 +9,11 @@ namespace EntityFrameworkSamples
 {
     public class Kategori
     {
+        public Kategori()
+        {
+            Urunler = new List<Urun>();
+        }
+
         //[Key]
         //public int KategoriId { get; set; }
 
