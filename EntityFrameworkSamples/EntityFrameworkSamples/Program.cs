@@ -452,6 +452,43 @@ namespace EntityFrameworkSamples
 
             #endregion
 
+            #region Deleting
+
+            //UrunContext db = new UrunContext();
+
+            #region Ürün silme
+
+            //var urunler = db.Urunler.Where(i => i.KategoriId == 2).ToList();
+
+            //foreach (var urun in urunler)
+            //{
+            //    db.Urunler.Remove(urun);
+            //}
+
+            //db.SaveChanges();
+
+            #endregion
+
+            #region Kategori silme
+
+            //var kategori = db.Kategoriler.Where(i => i.Id == 1).FirstOrDefault();
+
+            //if (kategori != null)
+            //{
+            //    db.Kategoriler.Remove(kategori);
+            //}
+
+            //db.SaveChanges();
+
+            //foreach (var item in db.Kategoriler)
+            //{
+            //    Console.WriteLine(item.Id);
+            //}
+
+            #endregion
+
+            #endregion
+
             Console.ReadLine();
         }
     }
