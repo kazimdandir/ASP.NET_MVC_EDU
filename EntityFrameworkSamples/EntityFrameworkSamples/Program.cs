@@ -489,6 +489,22 @@ namespace EntityFrameworkSamples
 
             #endregion
 
+            #region Ordering
+
+            UrunContext db = new UrunContext();
+
+            var urunler = db.Urunler
+                .OrderByDescending(i => i.Id) 
+                .Take(5) 
+                .ToList();
+
+            foreach (var item in urunler)
+            {
+                Console.WriteLine("urun adı : {0} fiyat : {1}", item.UrunAdi, item.Fiyat);
+            }
+
+            #endregion
+
             Console.ReadLine();
         }
     }
