@@ -258,7 +258,7 @@ namespace EntityFrameworkSamples
 
             #region Inserting
 
-            UrunContext db = new UrunContext();
+            //UrunContext db = new UrunContext();
 
             #region #1
 
@@ -376,6 +376,79 @@ namespace EntityFrameworkSamples
             //}
 
             #endregion
+
+            #endregion
+
+            #region Updating
+
+            //UrunContext db = new UrunContext();
+
+            #region Kategori üzerinden ürün güncelleme
+
+            //var kategoriler = db.Kategoriler.Where(i => i.Id == 1).Select(i => new { i.KategoriAdi, i.Urunler }).ToList();
+
+            //foreach (var kategori in kategoriler)
+            //{
+            //    foreach (var urun in kategori.Urunler)
+            //    {
+            //        urun.UrunAdi += " deneme";
+            //    }
+            //}
+
+            //db.SaveChanges();
+
+            //var urunler = db.Urunler.Where(i => i.KategoriId == 1).ToList();
+
+            //foreach (var item in urunler)
+            //{
+            //    Console.WriteLine(item.UrunAdi);
+            //}
+
+            #endregion
+
+            #region Ürünler için güncelleme
+
+            //var urunler = db.Urunler.ToList();
+
+            //foreach (var item in urunler)
+            //{
+            //    Console.WriteLine("urun adı : {0} fiyat : {1} ", item.UrunAdi, item.Fiyat);
+            //}
+
+            //foreach (var item in urunler)
+            //{
+            //    item.Fiyat *= 1.25;
+            //}
+
+            //db.SaveChanges();
+
+            //Console.WriteLine("------------------------");
+
+            //foreach (var item in urunler)
+            //{
+            //    Console.WriteLine("urun adı : {0} fiyat : {1} ", item.UrunAdi, item.Fiyat);
+            //}
+
+            #endregion
+
+            #region Kategoriler için güncelleme
+
+            //var kategori = db.Kategoriler.Where(i => i.Id == 1).FirstOrDefault();
+
+            //if (kategori != null)
+            //{
+            //    kategori.KategoriAdi = "Telefonlar";
+            //    db.SaveChanges();
+            //}
+
+            //foreach (var item in db.Kategoriler)
+            //{
+            //    Console.WriteLine(item.KategoriAdi);
+            //}
+
+            #endregion
+
+
 
             #endregion
 
