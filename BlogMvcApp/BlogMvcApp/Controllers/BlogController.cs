@@ -17,7 +17,7 @@ namespace BlogMvcApp.Controllers
         // GET: Blog
         public ActionResult Index()
         {
-            var blogs = db.Blogs.Include(b => b.Category);
+            var blogs = db.Blogs.Include(b => b.Category).OrderByDescending(i => i.DateOfUpload);
             return View(blogs.ToList());
         }
 
@@ -48,10 +48,12 @@ namespace BlogMvcApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,Description,Picture,Content,DateOfUpload,Approval,HomePage,CategoryId")] Blog blog)
+        public ActionResult Create([Bind(Include = "Title,Description,Picture,Content,CategoryId")] Blog blog)
         {
             if (ModelState.IsValid)
             {
+                blog.DateOfUpload = DateTime.Now;
+
                 db.Blogs.Add(blog);
                 db.SaveChanges();
                 return RedirectToAction("Index");
