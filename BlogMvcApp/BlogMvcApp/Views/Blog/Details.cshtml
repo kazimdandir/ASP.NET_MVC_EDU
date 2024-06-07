@@ -4,100 +4,102 @@
     ViewBag.Title = "Details";
 }
 
-<div class="row">
-    <div class="col-md-8">
-        <h1>@Model.Title</h1>
-        <hr />
 
-        <p>
-            <span class="glyphicon glyphicon-time"></span>
-            @Model.DateOfUpload
-        </p>
-        <hr />
+<h1>@Model.Title</h1>
+<hr />
 
-        <img class="img-responsive" src="http://placehold.it/900x300" alt="" />
-        <hr />
+<p>
+    <span class="glyphicon glyphicon-time"></span>
+    @Model.DateOfUpload
+</p>
+<hr />
 
-        <blockquote>
-            <p>@Model.Description</p>
-        </blockquote>
+<img class="img-responsive" src="http://placehold.it/900x300" alt="" />
+<hr />
 
-        <p>
-            @Model.Content
-        </p>
+<blockquote>
+    <p>@Model.Description</p>
+</blockquote>
 
-        <div class="comment">
-            <hr />
-            <div class="well">
-                <h4>Yorum Yap</h4>
-                <form role="form">
-                    <div class="form-group">
-                        <textarea class="form-control" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Kaydet</button>
-                </form>
+<p>
+    @Model.Content
+</p>
+
+<div class="comment">
+    <hr />
+    <div class="well">
+        <h4>Yorum Yap</h4>
+        <form role="form">
+            <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
             </div>
-            <hr />
-            <div class="d-flex align-items-center">
-                <div class="flex-shrink-0">
-                    <img src="..." alt="...">
-                </div>
-                <div class="flex-grow-1 ms-3">
-                    This is some content from a media component. You can replace this with any content and adjust it as needed.
-                </div>
-            </div>
-            <div class="d-flex align-items-center">
-                <div class="flex-shrink-0">
-                    <img src="..." alt="...">
-                </div>
-                <div class="flex-grow-1 ms-3">
-                    This is some content from a media component. You can replace this with any content and adjust it as needed.
-                </div>
-            </div>
-            <div class="d-flex align-items-center">
-                <div class="flex-shrink-0">
-                    <img src="..." alt="...">
-                </div>
-                <div class="flex-grow-1 ms-3">
-                    This is some content from a media component. You can replace this with any content and adjust it as needed.
-                </div>
-            </div>
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </form>
+    </div>
+    <hr />
+    <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+            <img src="..." alt="...">
+        </div>
+        <div class="flex-grow-1 ms-3">
+            This is some content from a media component. You can replace this with any content and adjust it as needed.
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="well">
-            <h4>Blog Search</h4>
-            <div class="input-group">
-                <input type="text" class="form-control" />
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"></button>
-                    <span class="glyphicon glyphicon-search"></span>
-                </span>
-            </div>
-            <!-- / .input-group -->
-            <div class="well">
-                <h4>Blog Categories</h4>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#">Category Name</a>
-                            </li>
-                            <li>
-                                <a href="#">Category Name</a>
-                            </li>
-                            <li>
-                                <a href="#">Category Name</a>
-                            </li>
-                            <li>
-                                <a href="#">Category Name</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.col-lg-6 -->
-                </div>
-                <!-- /.row -->
-            </div>
+    <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+            <img src="..." alt="...">
+        </div>
+        <div class="flex-grow-1 ms-3">
+            This is some content from a media component. You can replace this with any content and adjust it as needed.
+        </div>
+    </div>
+    <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+            <img src="..." alt="...">
+        </div>
+        <div class="flex-grow-1 ms-3">
+            This is some content from a media component. You can replace this with any content and adjust it as needed.
         </div>
     </div>
 </div>
+
+
+@section SagKolon{
+    <div class="well">
+        <h4>Blog Search</h4>
+        <div class="input-group">
+            <input type="text" class="form-control" />
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button"></button>
+                <span class="glyphicon glyphicon-search"></span>
+            </span>
+        </div>
+        <!-- / .input-group -->
+    </div>
+    <div class="well">
+        <h4>Blog Categories</h4>
+        <div class="row">
+            <div class="col-lg-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Category Name</a>
+                    </li>
+                    <li>
+                        <a href="#">Category Name</a>
+                    </li>
+                    <li>
+                        <a href="#">Category Name</a>
+                    </li>
+                    <li>
+                        <a href="#">Category Name</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.col-lg-6 -->
+        </div>
+        <!-- /.row -->
+    </div>
+}
+
+
+

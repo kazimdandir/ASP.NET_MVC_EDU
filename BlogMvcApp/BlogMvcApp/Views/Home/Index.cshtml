@@ -5,31 +5,67 @@
 
 <h2>Blog Listesi</h2>
 
-<div class="row">
-    <div class="col-md-8">
 
-        @foreach (var blog in Model)
-        {
-            <div class="blogitem">
-                <h3 class="page-header">
-                    @blog.Title
-                </h3>
-                <p>
-                    <span class="glpyicon glpyicon-time"></span>
-                    @blog.DateOfUpload
-                </p>
-                <hr />
-                <img class="img-responsive" src="http://placehold.it/900x300" />
-                <hr />
-                <p>
-                    @blog.Description
-                </p>
-                @Html.ActionLink("Daha Fazla", "Details", "Blog", new { id = @blog.Id }, new { @class = "btn btn-primary" })
-            </div>
-        }
 
+@foreach (var blog in Model)
+{
+    <div class="blogitem">
+        <h3 class="page-header">
+            @blog.Title
+        </h3>
+        <p>
+            <span class="glpyicon glpyicon-time"></span>
+            @blog.DateOfUpload
+        </p>
+        <hr />
+        <img class="img-responsive" src="http://placehold.it/900x300" />
+        <hr />
+        <p>
+            @blog.Description
+        </p>
+        @Html.ActionLink("Daha Fazla", "Details", "Blog", new { id = @blog.Id }, new { @class = "btn btn-primary" })
     </div>
-    <div class="col-md-4"></div>
-</div>
+}
+
+@section SagKolon{
+    <div class="well">
+        <h4>Blog Search</h4>
+        <div class="input-group">
+            <input type="text" class="form-control" />
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button"></button>
+                <span class="glyphicon glyphicon-search"></span>
+            </span>
+        </div>
+        <!-- / .input-group -->
+    </div>  
+    <div class="well">
+        <h4>Blog Categories</h4>
+        <div class="row">
+            <div class="col-lg-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Category Name</a>
+                    </li>
+                    <li>
+                        <a href="#">Category Name</a>
+                    </li>
+                    <li>
+                        <a href="#">Category Name</a>
+                    </li>
+                    <li>
+                        <a href="#">Category Name</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.col-lg-6 -->
+        </div>
+        <!-- /.row -->
+    </div>
+}
+
+
+
+
 
 
