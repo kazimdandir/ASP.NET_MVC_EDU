@@ -12,6 +12,16 @@
 </p>
 <hr />
 
+@if (TempData["Kategori"] != null)
+{
+    var kategori = (BlogMvcApp.Models.Category)TempData["Kategori"];
+
+    <div class="alert alert-success">
+        <span class="glyphicon glyphicon-ok"></span>
+        <b>@kategori.CategoryName</b> Kayıt edildi.
+    </div>
+}
+
 <table class="table table-bordered table-hover table-striped">
     <tr>
         <th style="width:65%;">
