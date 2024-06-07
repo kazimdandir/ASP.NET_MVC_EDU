@@ -27,6 +27,8 @@ D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\roslyn\vbc.exe.co
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\roslyn\vbc.rsp
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\roslyn\VBCSCompiler.exe
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\EntityFramework.dll
+D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\EntityFramework.SqlServer.dll
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\Microsoft.Web.Infrastructure.dll
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\System.Web.Helpers.dll
@@ -35,6 +37,8 @@ D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\System.Web.Razor.
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\System.Web.Webpages.Deployment.dll
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\System.Web.Webpages.dll
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\System.Web.Webpages.Razor.dll
+D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\EntityFramework.xml
+D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\EntityFramework.SqlServer.xml
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\System.Web.Razor.xml
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\System.Web.Webpages.xml
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\System.Web.Webpages.Deployment.xml
@@ -42,12 +46,8 @@ D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\System.Web.Webpag
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\System.Web.Helpers.xml
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\System.Web.Mvc.xml
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\obj\Debug\BlogMvcApp.csproj.AssemblyReference.cache
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\obj\Debug\BlogMvcApp.csproj.CoreCompileInputs.cache
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\obj\Debug\BlogMvcApp.csproj.CopyComplete
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\obj\Debug\BlogMvcApp.dll
 D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\obj\Debug\BlogMvcApp.pdb
-D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\EntityFramework.dll
-D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\EntityFramework.SqlServer.dll
-D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\EntityFramework.xml
-D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\bin\EntityFramework.SqlServer.xml
+D:\Projects\ASP.NET_Framework_Egitim\BlogMvcApp\BlogMvcApp\obj\Debug\BlogMvcApp.csproj.AssemblyReference.cache

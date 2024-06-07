@@ -84,13 +84,28 @@ namespace BlogMvcApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Description,Picture,Content,DateOfUpload,Approval,HomePage,CategoryId")] Blog blog)
+        public ActionResult Edit([Bind(Include = "Id,Title,Description,Picture,Content,Approval,HomePage,CategoryId")] Blog blog)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(blog).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                var entity = db.Blogs.Find(blog.Id);
+
+                if (entity != null)
+                {
+                    entity.Title = blog.Title;
+                    entity.Description = blog.Description;
+                    entity.Picture = blog.Picture;
+                    entity.Content = blog.Content;
+                    entity.Approval = blog.Approval;
+                    entity.HomePage = blog.HomePage;
+                    entity.CategoryId = blog.CategoryId;
+
+                    db.SaveChanges();
+
+                    TempData["Blog"] = entity;
+
+                    return RedirectToAction("Index");
+                }
             }
             ViewBag.CategoryId = new SelectList(db.Categories, "Id", "CategoryName", blog.CategoryId);
             return View(blog);
