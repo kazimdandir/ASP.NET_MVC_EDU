@@ -24,7 +24,7 @@
                 <p>
                     @blog.Description
                 </p>
-                <button class="btn btn-primary">Daha fazla...</button>
+                @Html.ActionLink("Daha Fazla", "Details", "Blog", new { id = @blog.Id }, new { @class = "btn btn-primary" })
             </div>
         }
 
